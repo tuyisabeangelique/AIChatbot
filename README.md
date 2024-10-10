@@ -12,15 +12,16 @@ The **Restaurant Recommendation Chatbot** is an AI chatbot designed to assist st
 
 ## Technologies Used
 - **Python**: Main programming language for the chatbot.
-- **Natural Language Toolkit (NLTK)**: For natural language processing tasks.
-- **TensorFlow**: For implementing machine learning algorithms.
-- **Flask**: To create a web application interface.
-- **GitHub**: For version control and collaboration.
+- **Natural Language Toolkit (NLTK)**: For natural language processing tasks, including tokenization and lemmatization.
+- **Keras**: High-level neural networks API, running on top of TensorFlow, for building and training deep learning models.
+- **NumPy**: Library for numerical computing in Python, used for handling arrays and performing mathematical operations.
+- **JSON**: Used for data interchange format to handle intents and responses.
+- **Pickle**: For serializing and de-serializing Python objects, especially for saving trained models.
 
 ## Getting Started
 ### Prerequisites
 Make sure you have read the following article:
-- https://www.techwithtim.net/tutorials/ai-chatbot/part-1
+- [https://www.techwithtim.net/tutorials/ai-chatbot/part-1](https://www.geeksforgeeks.org/deploy-a-chatbot-using-tensorflow-in-python/)
 
 ### Clone the Repository
 (You may also 'Fork' the repository to make changes independently. This might be a better alternative.)

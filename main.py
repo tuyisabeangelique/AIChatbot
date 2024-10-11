@@ -78,7 +78,7 @@ while True:
     ints = predict_class(message) 
     res = get_response(ints, intents) 
     print(res)
-=======
+
 # Source: https://www.techwithtim.net/tutorials/ai-chatbot/part-1
 
 import nltk

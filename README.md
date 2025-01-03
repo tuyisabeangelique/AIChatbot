@@ -1,4 +1,4 @@
-# CSE368 Project - Restaurant Recommendation Chatbot
+#  Restaurant Recommendation Chatbot
 
 ## Overview
 The **Restaurant Recommendation Chatbot** is an AI chatbot designed to assist students on our very own University at Buffalo North campus by providing personalized restaurant suggestions based on their preferences, dietary restrictions, time constraints, and proximity to their current location.

@@ -16,7 +16,7 @@ lemmatizer = WordNetLemmatizer()
 intents = json.loads(open("intents.json").read()) 
 words = pickle.load(open('words.pkl', 'rb')) 
 classes = pickle.load(open('classes.pkl', 'rb')) 
-model = load_model('chatbotmodel.h5') 
+model = load_model('my_model.keras') 
 
 
 def clean_up_sentences(sentence): 
@@ -70,8 +70,7 @@ def get_response(intents_list, intents_json):
             break
     return result 
   
-print("Chatbot is up!")
-
+print("The chatbot is up! You can say 'hi' or ask for a recommendation!")
 
 while True: 
     message = input("") 

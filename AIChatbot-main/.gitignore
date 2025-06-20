@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.keras
+analytics_data.json
+static/analytics_chart.png
+.DS_Store 

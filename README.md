@@ -1,7 +1,5 @@
 # AI-Powered Restaurant Chatbot
 
-![Live Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJlN2JlOGU4ZWNlZDg1YWQwYjI3NDE2Y2U3NGEwYjZhYzk3YmUxZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/your-gif-url-here/giphy.gif)
-
 ## Overview
 This project is an AI-powered chatbot that provides restaurant recommendations. It features a deep learning backend for natural language understanding and a web-based interface with a real-time analytics dashboard to monitor performance.
 
@@ -80,26 +78,4 @@ This project is an AI-powered chatbot that provides restaurant recommendations. 
 3.  **Access the application:**
     - **Chatbot Interface**: [http://127.0.0.1:5000](http://127.0.0.1:5000)
     - **Analytics Dashboard**: [http://127.0.0.1:5000/analytics](http://127.0.0.1:5000/analytics)
-
-## Project Structure
-
-```
-├── app.py                      # Main Flask application
-├── chatbot_logic.py           # Core AI chatbot functionality
-├── analytics_dashboard.py     # Analytics and performance tracking
-├── training.py               # AI model training script
-├── intents.json             # Training data for the chatbot
-├── requirements.txt         # Python dependencies
-├── templates/              # HTML templates
-│   ├── index.html         # Chatbot interface
-│   └── analytics.html     # Analytics dashboard
-└── static/                # CSS and static files
-    ├── style.css         # Main styling
-    └── analytics.css     # Dashboard styling
-```
-
-## Future Enhancements
-- Integrate a database for storing restaurant information.
-- Implement context management to handle follow-up questions.
-- Deploy the application to a cloud service like PythonAnywhere or Heroku.
 

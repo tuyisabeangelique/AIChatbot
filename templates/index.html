@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Restaurant Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='analytics.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>AI Restaurant Recommendation Chatbot</h1>
+            <p>Powered by Neural Networks & Machine Learning</p>
+        </div>
+        
+        <div class="nav-tabs">
+            <a href="/" class="tab active">Chatbot</a>
+            <a href="/analytics" class="tab">Analytics</a>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>UB Restaurant Bot</h2>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <div class="bot-message">
+                    <p>Hello! I'm the UB Restaurant Bot. Ask me for recommendations on campus!</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        
+        <div class="ai-features-preview">
+            <h3>AI/ML Features Demonstrated</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Neural Network NLP</h4>
+                    <p>Deep learning intent classification using TensorFlow/Keras</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Real-time Analytics</h4>
+                    <p>Performance tracking and data visualization</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            function sendMessage() {
+                var userInput = $("#user-input").val();
+                if (userInput.trim() == "") {
+                    return;
+                }
+                $("#chat-box").append('<div class="user-message"><p>' + userInput + '</p></div>');
+                $("#user-input").val("");
+                // Auto-scroll to the bottom
+                $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+
+                $.get("/get", { msg: userInput }).done(function(data) {
+                    var botResponse = data.response;
+                    $("#chat-box").append('<div class="bot-message"><p>' + botResponse + '</p></div>');
+                    // Auto-scroll to the bottom
+                    $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+                });
+            }
+
+            $("#send-btn").click(function() {
+                sendMessage();
+            });
+
+            $('#user-input').keypress(function(e) {
+                if (e.which == 13) {
+                    sendMessage();
+                    return false;
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,93 @@
+{
+  "interaction_log": [
+    {
+      "timestamp": "2025-06-20T17:20:18.451619",
+      "user_input": "Hi",
+      "predicted_intent": "cuisine_mexican",
+      "confidence": 0.41562667,
+      "response_time": 0.21618008613586426,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:20:25.225380",
+      "user_input": "Vegan food?",
+      "predicted_intent": "cuisine_mexican",
+      "confidence": 0.5763,
+      "response_time": 0.0500180721282959,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:20:29.703417",
+      "user_input": "Vegan",
+      "predicted_intent": "cuisine_mexican",
+      "confidence": 0.41562667,
+      "response_time": 0.05070686340332031,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:20:39.081364",
+      "user_input": "Halal",
+      "predicted_intent": "cuisine_mexican",
+      "confidence": 0.41562667,
+      "response_time": 0.05474400520324707,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:23:55.173518",
+      "user_input": "vegan",
+      "predicted_intent": "vegan_options",
+      "confidence": 1.0,
+      "response_time": 0.16884803771972656,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:23:58.643801",
+      "user_input": "mexican",
+      "predicted_intent": "cuisine_mexican",
+      "confidence": 0.99999166,
+      "response_time": 0.03430914878845215,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:24:01.717741",
+      "user_input": "halal",
+      "predicted_intent": "halal_options",
+      "confidence": 0.9999944,
+      "response_time": 0.059111833572387695,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:24:04.883015",
+      "user_input": "Vegan",
+      "predicted_intent": "vegan_options",
+      "confidence": 1.0,
+      "response_time": 0.06015419960021973,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:24:08.749964",
+      "user_input": "Asian",
+      "predicted_intent": "cuisine_asian",
+      "confidence": 1.0,
+      "response_time": 0.0544888973236084,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:43:47.833484",
+      "user_input": "I dont know what I want",
+      "predicted_intent": "restaurant_recommendation",
+      "confidence": 1.0,
+      "response_time": 0.24988579750061035,
+      "session_id": 0
+    },
+    {
+      "timestamp": "2025-06-20T17:43:54.057310",
+      "user_input": "maybe halal",
+      "predicted_intent": "halal_options",
+      "confidence": 0.9999944,
+      "response_time": 0.054116010665893555,
+      "session_id": 1
+    }
+  ],
+  "last_updated": "2025-06-20T17:43:54.057326"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Chatbot Analytics Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='analytics.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>AI Chatbot Analytics Dashboard</h1>
+            <p>Real-time performance metrics and process optimization insights</p>
+        </div>
+        
+        <div class="nav-tabs">
+            <a href="/" class="tab">Chatbot</a>
+            <a href="/analytics" class="tab active">Analytics</a>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Total Interactions</h3>
+                <div class="metric-value">{{ metrics.total_interactions if metrics.total_interactions else 0 }}</div>
+            </div>
+            <div class="metric-card">
+                <h3>Average Confidence</h3>
+                <div class="metric-value">{{ "%.2f"|format(metrics.avg_confidence) if metrics.avg_confidence else 0.00 }}</div>
+            </div>
+            <div class="metric-card">
+                <h3>Response Time</h3>
+                <div class="metric-value">{{ "%.3f"|format(metrics.avg_response_time) if metrics.avg_response_time else 0.000 }}s</div>
+            </div>
+            <div class="metric-card">
+                <h3>Unique Users</h3>
+                <div class="metric-value">{{ metrics.unique_users if metrics.unique_users else 0 }}</div>
+            </div>
+        </div>
+        
+        <div class="charts-section">
+            <div class="chart-container">
+                <h3>Performance Analytics</h3>
+                {% if chart_path %}
+                <img src="{{ url_for('static', filename='analytics_chart.png') }}" alt="Analytics Chart" style="width: 100%; max-width: 800px;">
+                {% else %}
+                <p>No data available yet. Start chatting to see analytics!</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="ai-features">
+            <h3>AI/ML Features Demonstrated</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Natural Language Processing</h4>
+                    <p>Intent classification using neural networks and NLTK</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Real-time Analytics</h4>
+                    <p>Performance tracking and data visualization</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,5 +1,8 @@
 # AI-Powered Restaurant Chatbot
 
+<img width="835" alt="Screenshot 2025-06-20 at 5 55 23 PM" src="https://github.com/user-attachments/assets/c1c82b1d-7c56-45d3-a89e-84af05446225" />
+
+
 ## Overview
 This project is an AI-powered chatbot that provides restaurant recommendations. It features a deep learning backend for natural language understanding and a web-based interface with a real-time analytics dashboard to monitor performance.
 
